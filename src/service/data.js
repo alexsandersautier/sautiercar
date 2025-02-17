@@ -73,3 +73,5 @@ export const vehicles = [
     }
 
 ]
+
+export const messageWhatsapp = "Boa tarde vi o seu site SautierCar e gostaria de fazer um orçamento para o meu site."

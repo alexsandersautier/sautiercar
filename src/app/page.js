@@ -2,12 +2,14 @@
 import styles from "./page.module.css";
 import Header from "@/Components/Header";
 import CategoryButton from "@/Components/CategoryButton";
-import { categories, vehicles } from "@/service/data";
+import { categories, vehicles, messageWhatsapp } from "@/service/data";
 import Search from "@/Components/Search";
 import Card from "@/Components/Card";
 import { useState } from "react";
 import Footer from "@/Components/Footer";
-
+import Image from "next/image";
+import Whatsapp from "../../public/icons/whatsapp.png";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -37,6 +39,8 @@ export default function Home() {
       setCurrentCategory(category);
     }
   }
+
+  const textWhatsapp = messageWhatsapp.split(" ").join("%20");
   return (
     <div className={styles.page}>
       <Header />
@@ -63,6 +67,11 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      <div className={styles.whatsapp}>
+        <Link href={`https://wa.me/5549988139463?text=${textWhatsapp}`} target="_blank">
+          <Image className={styles.whatsapp_icon} src={Whatsapp} alt="Botão do Whatsapp" width={48} height={48}/>
+        </Link>
+      </div>
     </div>
   );
 }

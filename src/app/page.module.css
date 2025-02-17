@@ -5,6 +5,7 @@
     justify-content: center;
     gap: 30px;
     width: 90%;
+    position: relative;
 }
 
 .main {
@@ -37,6 +38,21 @@
     width: 100%;
     flex: 1;
     margin: 10px 0;
+}
+
+.whatsapp {
+    display: flex;
+    position: fixed;
+    bottom: 45px;
+    right: 20px;
+}
+
+.whatsapp:hover{
+    cursor: pointer;
+}
+
+.whatsapp_icon{
+    flex: 1;
 }
 
 @media screen and (max-width: 768px) {

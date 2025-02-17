@@ -7,7 +7,7 @@ export default function Card(props){
             <Image className={styles.img} src={props.picture} alt={props.model}/>
             <h3>{props.brand} - {props.model}</h3>
             <p><span>{props.category}</span></p>
-            <p>R$ {props.value.toFixed(2)}</p>
+            <p>{props.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</p>
         </div>
     );
 }

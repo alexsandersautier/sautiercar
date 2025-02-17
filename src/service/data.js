@@ -29,10 +29,10 @@ export const categories = [
 ];
 
 import GolG3 from "../../public/images/golg3.png";
-import Uno from "../../public/images/uno.jpeg";
+import Uno from "../../public/images/uno.png";
 import Start from "../../public/images/start.webp";
 import Sprinter from "../../public/images/sprinter.png";
-import Santo from "../../public/images/motorhome.webp";
+import Santo from "../../public/images/motorhome.png";
 
 export const vehicles = [
     {

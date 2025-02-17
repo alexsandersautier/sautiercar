@@ -1,0 +1,18 @@
+.container{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    background-color: #e4dede;
+    border-radius: 25px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container > input{
+    background-color: #e4dede;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 25px;
+}

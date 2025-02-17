@@ -43,7 +43,7 @@
 .whatsapp {
     display: flex;
     position: fixed;
-    bottom: 45px;
+    bottom: 20px;
     right: 20px;
 }
 

@@ -48,14 +48,18 @@ export default function Home() {
           <Search handleSearchVehicle={handleSearch} focus={setCurrentVehicles} data={vehicles}/>
         </section>
         <section className={styles.cards}>
-          {currentVehicles.map((vehicle) => (<Card 
-            key={vehicle.id}
-            model={vehicle.model}
-            brand={vehicle.brand}
-            picture={vehicle.picture}
-            value={vehicle.value}
-            category={vehicle.category}
-          />))}
+          {
+            currentVehicles.length < 1 ?
+            <p>Nenhum veículo cadastrado</p> :
+            currentVehicles.map((vehicle) => (<Card 
+              key={vehicle.id}
+              model={vehicle.model}
+              brand={vehicle.brand}
+              picture={vehicle.picture}
+              value={vehicle.value}
+              category={vehicle.category}
+            />))
+          }
         </section>
       </main>
       <Footer />

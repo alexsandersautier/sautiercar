@@ -60,7 +60,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .page{
+    .page, .filters{
         width: 100%;
     }
     

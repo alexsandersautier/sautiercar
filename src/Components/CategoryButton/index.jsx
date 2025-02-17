@@ -1,11 +1,8 @@
 'use client';
 import Image from 'next/image';
 import styles from './CategoryButton.module.css';
-import { useState } from 'react';
-import Close from '../../../public/icons/close.png';
 
 export default function CategoryButton(props) {
-
 
     const handleClick = (category) => {
         props.click(category);
